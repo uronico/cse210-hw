@@ -121,7 +121,7 @@ public class GoalManager
                while (!reader.EndOfStream)
                {
                     string[] parts = reader.ReadLine().Split('-');
-                    Goal loadedEntry = new Goal(parts[1], parts[2]); 
+                    Goal loadedEntry = new SimpleGoal(parts[0], parts[1], score);   
                     goals.Add(loadedEntry);
                 }
             }
